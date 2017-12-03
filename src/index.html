@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>First Person Soundboard</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Javascript para reproducir el sonidillo -->
+		<script type="text/javascript">
+			function playSound (sound) {
+				document.getElementById('sfx_'+sound).play();
+			}
+		</script>
+		<!--El CSS de esta cosa -->
+		<link rel="stylesheet" type="text/css" href="soundboard.css">
+		<!--El CSS de los sprites de los botones -->
+		<link rel="stylesheet" type="text/css" href="sprites.css">
+	</head>
+	<body>
+		<!--Los sonidos como tal. Los tengo normalizados y todos comprimidos a MP3 de 112 por tema cargar rapido y tal -->
+		<audio id="sfx_aplausos" src="sfx/aplausos.mp3"></audio>
+		<audio id="sfx_badum" src="sfx/badum.mp3"></audio>
+		<audio id="sfx_barrerroll" src="sfx/barrerroll.mp3"></audio>
+		<audio id="sfx_basicamente" src="sfx/basicamente.mp3"></audio>
+		<audio id="sfx_batman" src="sfx/batman.mp3"></audio>
+		<audio id="sfx_bocina" src="sfx/bocina.mp3"></audio>
+		<audio id="sfx_demetal" src="sfx/demetal.mp3"></audio>
+		<audio id="sfx_desafio" src="sfx/desafio.mp3"></audio>
+		<audio id="sfx_enhorabuena" src="sfx/enhorabuena.mp3"></audio>
+		<audio id="sfx_enserio" src="sfx/enserio.mp3"></audio>
+		<audio id="sfx_epi" src="sfx/epi.mp3"></audio>
+		<audio id="sfx_idiota" src="sfx/idiota.mp3"></audio>
+		<audio id="sfx_increible" src="sfx/increible.mp3"></audio>
+		<audio id="sfx_lastima" src="sfx/lastima.mp3"></audio>
+		<audio id="sfx_logro" src="sfx/logro.mp3"></audio>
+		<audio id="sfx_moneda" src="sfx/moneda.mp3"></audio>
+		<audio id="sfx_nolousas" src="sfx/nolousas.mp3"></audio>
+		<audio id="sfx_pegi18" src="sfx/pegi18.mp3"></audio>
+		<audio id="sfx_pikachu" src="sfx/pikachu.mp3"></audio>
+		<audio id="sfx_ponyyay" src="sfx/ponyyay.mp3"></audio>
+		<audio id="sfx_porno" src="sfx/porno.mp3"></audio>
+		<audio id="sfx_record" src="sfx/nuevorecord.mp3"></audio>
+		<audio id="sfx_redoble" src="sfx/redoble.mp3"></audio>
+		<audio id="sfx_risas" src="sfx/risas.mp3"></audio>
+		<audio id="sfx_rombos" src="sfx/rombos.mp3"></audio>
+		<audio id="sfx_seacabo" src="sfx/seacabo.mp3"></audio>
+		<audio id="sfx_subelo" src="sfx/subelo.mp3"></audio>
+		<audio id="sfx_switch" src="sfx/switch.mp3"></audio>
+		<audio id="sfx_winerror" src="sfx/winerror.mp3"></audio>
+		<audio id="sfx_winstart" src="sfx/winstart.mp3"></audio>
+		<audio id="sfx_woomy" src="sfx/woomy.mp3"></audio>		
+		<audio id="sfx_xxl" src="sfx/xxl.mp3"></audio>			
+		
+		<div class="botones">
+		<!-- Los botones. Aqui uno de ejemplo para copypastes 
+			<div class="cuadro-boton">
+				<input type="image" class="NOMBRE DEL SPRITE" onclick="playSound('NOMBRE DEL SONIDO')" />
+				<p class="etiqueta-boton">ETIQUETA DEL BOTON</p>
+			</div>		
+		-->		
+			<div class="cuadro-boton">
+				<input type="image" class="sprbutton" onclick="playSound('aplausos')" />
+				<p class="etiqueta-boton">Aplausos</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprbutton" onclick="playSound('badum')" />
+				<p class="etiqueta-boton">Badum</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprpeppy" onclick="playSound('barrerroll')" />
+				<p class="etiqueta-boton">Barrel Roll</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprapcom" onclick="playSound('basicamente')" />
+				<p class="etiqueta-boton">B&aacute;sicamente</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprbatman" onclick="playSound('batman')" />
+				<p class="etiqueta-boton">Batman</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprbutton" onclick="playSound('bocina')" />
+				<p class="etiqueta-boton">Bocina</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprsmash" onclick="playSound('demetal')" />
+				<p class="etiqueta-boton">De metal</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprdarkseed" onclick="playSound('desafio')" />
+				<p class="etiqueta-boton">Querido Desaf&iacute;o</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprsmash" onclick="playSound('enhorabuena')" />
+				<p class="etiqueta-boton">Enhorabuena</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprsmash" onclick="playSound('enserio')" />
+				<p class="etiqueta-boton">En serio</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprdarkseed" onclick="playSound('epi')" />
+				<p class="etiqueta-boton">Epilepsia</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprapcom" onclick="playSound('idiota')" />
+				<p class="etiqueta-boton">El t&iacute;o es idiota</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprsmash" onclick="playSound('increible')" />
+				<p class="etiqueta-boton">¡WOW! ¡Increible!</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprsmash" onclick="playSound('lastima')" />
+				<p class="etiqueta-boton">¡LÁSTIMA!</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprlogro" onclick="playSound('logro')" />
+				<p class="etiqueta-boton">Logro</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprmoneda" onclick="playSound('moneda')" />
+				<p class="etiqueta-boton">Moneda Mario</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprwallapop" onclick="playSound('nolousas')" />
+				<p class="etiqueta-boton">No lo usas</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprpegi18" onclick="playSound('pegi18')" />
+				<p class="etiqueta-boton">PEGI 18</p>
+			</div>			
+			<div class="cuadro-boton">
+				<input type="image" class="sprpikachu" onclick="playSound('pikachu')" />
+				<p class="etiqueta-boton">Pikachu</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprponyyay" onclick="playSound('ponyyay')" />
+				<p class="etiqueta-boton">YAY!</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprapcom" onclick="playSound('porno')" />
+				<p class="etiqueta-boton">He visto porno de eso</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprbutton" onclick="playSound('redoble')" />
+				<p class="etiqueta-boton">Redoble</p>
+			</div>			
+			<div class="cuadro-boton">
+				<input type="image" class="sprbutton" onclick="playSound('risas')" />
+				<p class="etiqueta-boton">Risas</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprdosrombos" onclick="playSound('rombos')" />
+				<p class="etiqueta-boton">Rombos</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprsmash" onclick="playSound('seacabo')" />
+				<p class="etiqueta-boton">¡SE ACAB&Oacute;!</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprwallapop" onclick="playSound('subelo')" />
+				<p class="etiqueta-boton">S&uacute;belo</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprswitch" onclick="playSound('switch')" />
+				<p class="etiqueta-boton">Switch Click</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprwinlogo" onclick="playSound('winerror')" />
+				<p class="etiqueta-boton">Error!</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprwinlogo" onclick="playSound('winstart')" />
+				<p class="etiqueta-boton">Windows XP</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprwoomy" onclick="playSound('woomy')" />
+				<p class="etiqueta-boton">WOOMY!</p>
+			</div>
+			<div class="cuadro-boton">
+				<input type="image" class="sprsmash" onclick="playSound('xxl')" />
+				<p class="etiqueta-boton">XXL</p>
+			</div>	
+		</div>
+	</body>
+</html>

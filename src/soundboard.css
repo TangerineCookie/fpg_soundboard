@@ -1,0 +1,22 @@
+body {
+	background-color: #33363b;
+}
+.cuadro-boton {
+	display: inline-block;
+	width: 64px;
+	margin: 5px;
+	vertical-align: top;			
+}
+input {
+	display: block;
+	margin: 0 auto;
+}
+.etiqueta-boton {
+	vertical-align: bottom;
+	text-align: center;
+	font-size: 8pt;
+	color: white;
+	font-weight: bold;
+	font-family: sans-serif;
+	margin: 5px;
+}
